@@ -7,7 +7,6 @@ app.use(cors());
 app.use(express.json());
 
 app.post('/test', (req, res) => {
-    console.log(req.body)
     let returnString = '';
     for (let i = 0; i < req.body.string_to_cut.length; i++) {
         if ((i + 1) % 3 == 0) {
