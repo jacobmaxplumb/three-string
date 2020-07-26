@@ -1,0 +1,8 @@
+<div class="three-string-container">
+    <form #stringForm="ngForm" (submit)="stringFormSubmitted(stringForm)">
+        <input type="text" name="string_to_cut" ngModel />
+        <button type="submit">Submit</button>
+    </form>
+
+    <div>{{everyThirdLetter}}</div>
+</div>
